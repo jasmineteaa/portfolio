@@ -1,0 +1,56 @@
+header{
+  background: $primary;
+  height: 100vh;
+}
+.topBar {
+  display: flex;
+  padding: 40px;
+  font-weight: 500;
+}
+.logo {
+  flex: 2;
+}
+nav ul {
+  display: flex;
+  flex: 4;
+  li {
+    margin-left: 25px;
+    text-transform: capitalize;
+  }
+}
+
+.intro {
+  width: 90%;
+  margin: auto;
+  margin-top: auto;
+  text-align: center;
+  color: white;
+  height: 80vh;
+  background-image: url(../../assets/bean.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 30px auto 20px;
+  }
+  h1,h2{
+    width:80%;
+    font-weight: 500;
+  }
+  h2{
+    font-size: 1.6rem;
+    margin: 0 auto;
+  }
+}
+button{
+  background:transparent;
+  border:none;
+  font-size: 60px;
+  margin: 20px auto 0;
+  width:100px;
+}

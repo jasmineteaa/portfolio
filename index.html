@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/5bfeb91db4.js"></script>
+  <link rel="stylesheet"
+    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Portfolio</title>
+</head>
+<body>
+  <header>
+    <div class="wrapper">
+      <div class="topBar" id="topBar">
+        <div class="logo">jasminetea</div>
+        <nav>
+          <ul>
+            <li><a href="#aboutMe">about</a></li>
+            <li><a href="#skill">skill</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="intro">
+        <h1>Hi, I'm Jasmine</h1>
+        <h2>I'm a <span id="typed"</span></h2>
+        <div id="typedStrings">
+          <span>Web Developer.</span>
+          <span>sky diver.</span>
+          <span>serial napper (when not on the job).</span>
+        </div>
+        <!-- <span id="typed"></span> -->
+        <button><a href="#aboutMe"><i class="fas fa-arrow-circle-down"></i></a></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="aboutMe" id="aboutMe">
+    <div class="wrapper">
+      <div class="aboutDescription">
+        <h3>Hi</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus mollitia, doloribus sit ex, voluptate, quaerat doloremque sint voluptas tenetur deleniti natus perspiciatis sequi dolore animi commodi rem similique itaque magni.</p>
+        <figure>
+          <img src="" alt="">
+          <figcaption>
+            <ul>
+              <li>dark chocolate addict</li>
+              <li>avid traveller</li>
+              <li>marsupial lover</li>
+            </ul>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section> <!--end of aboutMe-->
+  
+  <section class="skill" id="skill">
+    <div class="wrapper">
+      <h3>Skills</h3>
+      <div class="skillContainer">
+        <div class="skillItem skillItem1">
+          <i class="devicon-html5-plain"></i>
+          <!-- <p>HTML5</p> -->
+        </div>
+        <div class="skillItem skillItem2">
+          <i class="devicon-css3-plain"></i>
+          <!-- <p>CSS3</p> -->
+        </div>
+        <div class="skillItem skillItem3">
+          <i class="devicon-sass-original"></i>
+          <!-- <p>Sass</p> -->
+        </div>
+        <div class="skillItem skillItem4">
+          <i class="devicon-javascript-plain"></i>
+          <!-- <p>JavaScript</p> -->
+        </div>
+        <div class="skillItem skillItem5">
+          <i class="devicon-jquery-plain"></i>
+          <!-- <p>jQuery</p> -->
+        </div>
+        <div class="skillItem skillItem6">
+          <i class="devicon-git-plain"></i>
+          <!-- <p>Git</p> -->
+        </div>
+        <div class="skillItem skillItem7">
+          <i class="devicon-github-plain"></i>
+          <!-- <p>GitHub</p> -->
+        </div>
+        <div class="skillItem skillItem8">
+          <i class="devicon-react-original"></i>
+          <!-- <p>ReactJS</p> -->
+        </div>
+        <div class="skillItem skillItem9">
+          <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title/><path d="M3.89 15.673L6.255.461A.542.542 0 0 1 7.27.289L9.813 5.06 3.89 15.673zm16.795 3.691L18.433 5.365a.543.543 0 0 0-.918-.295l-14.2 14.294 7.857 4.428a1.62 1.62 0 0 0 1.587 0l7.926-4.428zM14.3 7.148l-1.82-3.482a.542.542 0 0 0-.96 0L3.53 17.984 14.3 7.148z"/>
+          </svg>
+          <!-- <p>Firebase</p> -->
+        </div>
+      </div>
+    </div>
+  </section> <!--end of skill -->
+  
+  <section class="portfolio" id="portfolio">
+    <h3>Portfolio</h3>
+    <div class="top">
+      <div class="twoThird"></div>
+      <div class="third"></div>
+    </div>
+    <div class="bottom">
+      <div class="third"></div>
+      <div class="third"></div>
+      <div class="third"></div>
+    </div>
+  </section> <!-- end of portfolio-->
+
+  <section class="contact" id="contact">
+    <div class="wrapper">
+      <h3>Get In Touch!</h3>
+      <h4>let's make something amazing together</h4>
+      <form action="http://www.focuspocus.io/magic/e3bf094c0d0fd4d5830ea0e94a15ce22" method="POST" name="contact">
+        <fieldset>
+          <label class="visuallyHidden" for="name">Your Name:</label>
+          <input type="text" name="name" id="name" placeholder="your name">
+    
+          <label class="visuallyHidden" for="email">Your Email:</label>
+          <input type="text" name="email" id="email" placeholder="email">
+        </fieldset>
+  
+        <label class="visuallyHidden" for="message">Message: </label>
+        <textarea name="message" id="message" cols="30" rows="2" placeholder="message"></textarea>
+  
+        <input type="submit" value="Send">
+      </form>
+    </div>
+    <footer>
+      <div class="wrapper">
+        <ul class="socials">
+          <li>
+            <a href="https://www.linkedin.com/in/jasminetossan/" aria-label="Go to Jasmine's LinkedIn page.">
+              <i class="fab fa-linkedin" aria-hidden="true"></i>
+              <span class="visuallyHidden">LinkedIn</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/jasmineteaa" aria-label="Go to Jasmine's Github page.">
+              <i class="fab fa-github" aria-hidden="true"></i>
+              <span class="visuallyHidden">Snapchat</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/Jasmineteaa7" aria-label="Go to Jasmine's Twitter page.">
+              <i class="fab fa-twitter" aria-hidden="true"></i>
+              <span class="visuallyHidden">Twitter</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://medium.com/" aria-label="Go to Jasmine's Medium page.">
+              <i class="fab fa-medium" aria-hidden="true"></i>
+              <span class="visuallyHidden">Medium</span>
+            </a>
+          </li>
+        </ul>
+        <button><a href="#topBar"><i class="fas fa-arrow-circle-up"></i></a></button>
+      </div>
+    </footer>
+  </section> <!--end of contact-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
