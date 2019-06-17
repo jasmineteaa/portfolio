@@ -1,3 +1,44 @@
 .aboutDescription {
-  text-align: center;
+  text-align: left;
+  display: flex;
+}
+.aboutMe {
+  background: $primary;
+}
+.personalImg {
+  width: 50%;
+}
+.info {
+  width: 50%;
+  padding-left: 20px;
+  letter-spacing:1px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  h3{
+    padding-bottom: 1rem;
+    color: $secondary;
+    text-align: left;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  h5 {
+    color: $secondary;
+    font-weight: 500;
+  }
+}
+.shortIntro {
+  line-height: 2;
+  padding-bottom: 1rem;
+  font-size: 1.1rem;
+}
+.text {
+  font-size: 1rem;
+  line-height: 2;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.personal {
+  margin-left: 1rem;
 }

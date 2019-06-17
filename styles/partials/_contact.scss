@@ -3,6 +3,9 @@
   color: $fontColor;
   text-align: center;
   position: relative;
+  button {
+    margin: 0 auto 13px;
+  }
 }
 input {
   background: transparent;

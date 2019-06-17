@@ -8,6 +8,7 @@
   <link rel="stylesheet"
     href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link rel="stylesheet" href="./styles/style.css">
   <title>Portfolio</title>
 </head>
@@ -27,36 +28,16 @@
       </div>
       <div class="intro">
         <h1>Hi, I'm Jasmine</h1>
-        <h2>I'm a <span id="typed"</span></h2>
+        <h2>I'm <span id="typed"</span></h2>
         <div id="typedStrings">
-          <span>Web Developer.</span>
-          <span>sky diver.</span>
-          <span>serial napper (when not on the job).</span>
+          <span>a Web Developer.</span>
+          <span>a serial napper (when not on the job).</span>
+          <span></span>
         </div>
-        <!-- <span id="typed"></span> -->
-        <button><a href="#aboutMe"><i class="fas fa-arrow-circle-down"></i></a></button>
+        <button><a href="#skill"><i class="fas fa-arrow-circle-down"></i></a></button>
       </div>
     </div>
   </header>
-
-  <section class="aboutMe" id="aboutMe">
-    <div class="wrapper">
-      <div class="aboutDescription">
-        <h3>Hi</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus mollitia, doloribus sit ex, voluptate, quaerat doloremque sint voluptas tenetur deleniti natus perspiciatis sequi dolore animi commodi rem similique itaque magni.</p>
-        <figure>
-          <img src="" alt="">
-          <figcaption>
-            <ul>
-              <li>dark chocolate addict</li>
-              <li>avid traveller</li>
-              <li>marsupial lover</li>
-            </ul>
-          </figcaption>
-        </figure>
-      </div>
-    </div>
-  </section> <!--end of aboutMe-->
   
   <section class="skill" id="skill">
     <div class="wrapper">
@@ -106,16 +87,168 @@
   
   <section class="portfolio" id="portfolio">
     <h3>Portfolio</h3>
-    <div class="top">
-      <div class="twoThird"></div>
-      <div class="third"></div>
-    </div>
-    <div class="bottom">
-      <div class="third"></div>
-      <div class="third"></div>
-      <div class="third"></div>
+    <div class="portfolioContainer">      
+      <div class="portfolioItem">
+        <div class="innerWrapper">
+
+          <div class="description third">
+            <h5 class="title">PSD to HTML</h5>
+            <p>This is a photography themed website. It is designed to be accessible and responsive at different breakpoints.</p>
+            <ul class="skills">
+              <li>HTML  |</li>
+              <li>SCSS  |</li>
+              <li>Responsive Design </li>
+            </ul>
+            <div class="link">
+              <a class="live" href="https://jasmineteaa.github.io/jasmineTossanProjectTwo/" target="_blank">View Live</a>
+              <a class="gHView" href="https://github.com/jasmineteaa/jasmineTossanProjectTwo" target="_blank">View GitHub</a>
+            </div>
+          </div>
+
+          <div class="portfolioImg twoThird">
+            <a target="_blank" href="https://jasmineteaa.github.io/jasmineTossanProjectTwo/index.html">
+              <img src="./assets/captured.png" alt="responsive psd conversion project">
+            </a> 
+            <div class="overlay"></div>
+          </div> 
+
+        </div>
+      </div>
+
+      <div class="portfolioItem">
+        <div class="innerWrapper">
+
+          <div class="portfolioImg twoThird">
+            <a target="_blank" href="https://jasmineteaa.github.io/jasmine-tossan-project-three/">
+              <img src="./assets/jsQuiz.PNG" alt="quiz made from jQuery">
+            </a>
+            <div class="overlay"></div>
+          </div>
+
+          <div class="description third">
+            <h5 class="title">JQuery Interactive Quiz</h5>
+            <p>This is a quiz testing Javascript knowledge on common methods.</p> 
+            <ul class="skills">
+              <li>Javascript  |</li>
+              <li>JQuery  |</li>
+              <li>HTML  |</li>
+              <li>CSS  |</li>
+              <li>Responsive Design</li>
+            </ul>
+            <div class="link">
+              <a class="live" href="https://jasmineteaa.github.io/jasmine-tossan-project-three/" target="_blank">View Live</a>
+              <a class="gHView" href="https://github.com/jasmineteaa/jasmine-tossan-project-three" target="_blank">View GitHub</a>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+
+      <div class="portfolioItem">
+        <div class="innerWrapper">
+          
+          <div class="description third">
+            <h5 class="title">API Music Application</h5>
+            <p>This is a playlist generator app that uses the Itunes REST API to search for different music, artists and genres.</p> 
+            <ul class="skills">
+              <li>REST Api |</li>
+              <li>React |</li>
+              <li>Firebase |</li>
+              <li>HTML |</li>
+              <li>CSS |</li>
+              <li>Responsive Design</li>
+            </ul>
+            <div class="link">
+              <a class="live" href="https://project-five-95c84.firebaseapp.com/" target="_blank">View Live</a>
+              <a class="gHView" href="https://github.com/jasmineteaa/musicThing" target="_blank">View GitHub</a>
+            </div>
+          </div>
+
+          <div class="portfolioImg twoThird">
+            <a target="_blank" href="https://project-five-95c84.firebaseapp.com/">
+              <img src="./assets/musicThing.PNG" alt="playlist generator project created using React, Firebase, REST Api">
+            </a>
+            <div class="overlay"></div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- <div class="portfolioItem">
+        <div class="innerWrapper">
+          <div class="portfolioImg twoThird">
+            <a target="_blank" href="https://makeupbar.github.io/makeupBar/">
+              <img src="./assets/makeupBar2.PNG" alt="makeup search app created using REST api and jQuery">
+            </a>
+          </div> 
+          <div class="description third">
+            <h5 class="title">PSD to HTML</h5>
+            <p>This is a responsive and accessible website created based on a PSD produced by Fatima Gueye.</p> 
+            <a class="live" href="https://makeupbar.github.io/makeupBar/" target="_blank">View Live</a>
+            <a class="gHView" href="https://github.com/makeupbar/makeupBar" target="_blank">View GitHub</a>
+          </div>
+          <ul class="skills">
+            <li>HTML</li>
+            <li>SCSS</li>
+            <li>Responsive Design</li>
+          </ul>
+        </div>
+      </div> -->
+
+      <!-- <div class="portfolioItem">
+        <div class="innerWrapper">
+      
+          <div class="description third">
+            <h5 class="title">Agency API Project</h5>
+            <p>This college navigator app allows users to search and filter through different schools and save or edit notes on their favorite institutions.</p> 
+            <ul class="skills">
+              <li>React</li>
+              <li>REST API</li>
+              <li>Firebase</li>
+              <li>HTML</li>
+              <li>SCSS</li>
+              <li>Responsive Design</li>
+            </ul>
+            <a class="live" href="https://github.com/jasmineteaa/jasmineTossanProjectTwo" target="_blank">View Live</a>
+            <a class="gHView" href="https://jasmineteaa.github.io/jasmineTossanProjectTwo/" target="_blank">View GitHub</a>
+          </div>
+
+          <div class="portfolioImg twoThird">
+            <a target="_blank" href="https://andrewdavidfrankiejasmine.github.io/collegeNavigator/">
+              <img src="./assets/collegeNavigator2.PNG" alt="college navigator app created using REST api and React and Firebase">
+            </a>
+          </div>
+        
+        </div>
+      </div> -->
     </div>
   </section> <!-- end of portfolio-->
+
+  <section class="aboutMe" id="aboutMe">
+    <div class="wrapper">
+      <div class="aboutDescription">
+        <div class="personalImg">
+          <img src="./assets/personal.PNG" alt="Jasmine hiking in Dundas Peak.">
+        </div>
+        <div class="info">
+          <h3>Hi I'm Jasmine</h3>
+          <p class="shortIntro">I'm a front-end developer, dark chocolate addict and avid reader based in Toronto.</p>
+          <div class="text">
+            <div class="coding">
+              <h5>Coding</h5>
+              <p>I'm focused on building inclusive, accessible and responsive web designs. I'm always looking to improve my skills, learn new things and give back to the tech community.</p>
+            </div>
+            <div class="personal">
+              <h5>Personal</h5>
+              <p>In my spare time, I like to backpack to different countries, visit aquariums and read memoirs and autobiographies.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--end of aboutMe-->
 
   <section class="contact" id="contact">
     <div class="wrapper">
@@ -138,6 +271,7 @@
     </div>
     <footer>
       <div class="wrapper">
+        <button><a href="#topBar"><i class="fas fa-arrow-circle-up"></i></a></button>
         <ul class="socials">
           <li>
             <a href="https://www.linkedin.com/in/jasminetossan/" aria-label="Go to Jasmine's LinkedIn page.">
@@ -164,12 +298,12 @@
             </a>
           </li>
         </ul>
-        <button><a href="#topBar"><i class="fas fa-arrow-circle-up"></i></a></button>
       </div>
     </footer>
   </section> <!--end of contact-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <script src="./script.js"></script>
 </body>
 </html>

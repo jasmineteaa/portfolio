@@ -1,0 +1,79 @@
+.portfolio {
+  height: auto;
+  h3{
+    color: $secondary;
+  }
+}
+.portfolioContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolioItem {
+  margin-bottom: 50px;
+  width: 100%;
+}
+.third {
+  width: 40%;
+}
+.twoThird {
+  width: 60%;
+}
+ul.skills {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 1.5;
+  li {
+  margin-right: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1rem;
+  }
+}
+.portfolioImg {
+  position: relative;
+}
+.overlay {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to right, #33313126,#f0f8ff12 , #00000038);
+}
+.innerWrapper {
+  display: flex;
+  width: 85%;
+  margin: 0 auto;
+  background: #DBD9E450;
+}
+.title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: $secondary;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px 15px;
+  p {
+    font-size: 1.1rem;
+    line-height: 2;
+    color: #6b6b6b;
+  }
+}
+.link {
+  display: flex;
+}
+.live,
+.gHView {
+
+  margin-right: 15px;
+  letter-spacing: 1px;
+  background: $secondary;
+  color: $fontColor;
+  padding: 10px;
+  font-size: 1.2rem;
+}

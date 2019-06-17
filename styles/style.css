@@ -208,11 +208,16 @@ h3 {
 i {
   color: whitesmoke; }
 
+img {
+  max-width: 100%;
+  display: block;
+  width: 100%; }
+
 header {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #C4F9FF), to(#C4F9FF78)), url(../../assets/background.jpg);
-  background-image: -webkit-linear-gradient(top, #C4F9FF 70%, #C4F9FF78), url(../../assets/background.jpg);
-  background-image: -o-linear-gradient(top, #C4F9FF 70%, #C4F9FF78), url(../../assets/background.jpg);
-  background-image: linear-gradient(to bottom, #C4F9FF 70%, #C4F9FF78), url(../../assets/background.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(65%, #C4F9FF), to(#C4F9FF00)), url(../../assets/background.jpg);
+  background-image: -webkit-linear-gradient(top, #C4F9FF 65%, #C4F9FF00), url(../../assets/background.jpg);
+  background-image: -o-linear-gradient(top, #C4F9FF 65%, #C4F9FF00), url(../../assets/background.jpg);
+  background-image: linear-gradient(to bottom, #C4F9FF 65%, #C4F9FF00), url(../../assets/background.jpg);
   background-color: #C4F9FF;
   height: 100vh;
   background-size: cover;
@@ -244,11 +249,10 @@ nav ul {
 
 .intro {
   width: 90%;
-  margin: auto;
-  margin-top: auto;
+  margin: 0 auto 80px;
   text-align: center;
   color: whitesmoke;
-  height: 80vh;
+  height: 75vh;
   background-image: url(../../assets/bean.svg);
   background-repeat: no-repeat;
   background-position: center top;
@@ -266,23 +270,74 @@ nav ul {
   .intro h1 {
     font-size: 3rem;
     font-weight: bold;
-    margin: 30px auto 20px; }
+    margin: 100px auto 20px; }
   .intro h1, .intro h2 {
     width: 80%;
     font-weight: 500; }
   .intro h2 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin: 0 auto; }
+  .intro button {
+    margin: 30px auto 0; }
 
 button {
   background: transparent;
   border: none;
-  font-size: 60px;
-  margin: 20px auto 0;
-  width: 100px; }
+  width: 100px;
+  font-size: 25px; }
 
 .aboutDescription {
-  text-align: center; }
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.aboutMe {
+  background: #C4F9FF; }
+
+.personalImg {
+  width: 50%; }
+
+.info {
+  width: 50%;
+  padding-left: 20px;
+  letter-spacing: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .info h3 {
+    padding-bottom: 1rem;
+    color: #1E1244;
+    text-align: left;
+    font-size: 3rem;
+    font-weight: 700; }
+  .info h5 {
+    color: #1E1244;
+    font-weight: 500; }
+
+.shortIntro {
+  line-height: 2;
+  padding-bottom: 1rem;
+  font-size: 1.1rem; }
+
+.text {
+  font-size: 1rem;
+  line-height: 2;
+  text-align: left;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; }
+
+.personal {
+  margin-left: 1rem; }
 
 .wrapper {
   height: 100%;
@@ -309,7 +364,7 @@ button {
   background-position: center;
   padding-top: 75px; }
   .skillItem i {
-    font-size: 60px;
+    font-size: 55px;
     text-shadow: 1px 1px 2px gray; }
   .skillItem svg {
     fill: white;
@@ -320,19 +375,19 @@ button {
 .skillItem1,
 .skillItem5,
 .skillItem9 {
-  background-image: url(../../assets/beanPink2.svg); }
+  background-image: url(../../assets/beanPink.svg); }
 
 .skillItem2,
 .skillItem6 {
-  background-image: url(../../assets/beanGreen2.svg); }
+  background-image: url(../../assets/beanGreen.svg); }
 
 .skillItem4,
 .skillItem8 {
-  background-image: url(../../assets/beanBlue2.svg); }
+  background-image: url(../../assets/beanBlue.svg); }
 
 .skillItem3,
 .skillItem7 {
-  background-image: url(../../assets/beanOrange2.svg); }
+  background-image: url(../../assets/beanOrange.svg); }
 
 .skillContainer {
   display: -ms-grid;
@@ -343,11 +398,107 @@ button {
   grid-template-rows: 180px 180px 180px;
   text-align: center; }
 
+.portfolio {
+  height: auto; }
+  .portfolio h3 {
+    color: #1E1244; }
+
+.portfolioContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.portfolioItem {
+  margin-bottom: 50px;
+  width: 100%; }
+
+.third {
+  width: 40%; }
+
+.twoThird {
+  width: 60%; }
+
+ul.skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  line-height: 1.5; }
+  ul.skills li {
+    margin-right: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1rem; }
+
+.portfolioImg {
+  position: relative; }
+
+.overlay {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: -webkit-gradient(linear, left top, right top, from(#33313126), color-stop(#f0f8ff12), to(#00000038));
+  background: -webkit-linear-gradient(left, #33313126, #f0f8ff12, #00000038);
+  background: -o-linear-gradient(left, #33313126, #f0f8ff12, #00000038);
+  background: linear-gradient(to right, #33313126, #f0f8ff12, #00000038); }
+
+.innerWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 85%;
+  margin: 0 auto;
+  background: #DBD9E450; }
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #1E1244; }
+
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding: 10px 15px; }
+  .description p {
+    font-size: 1.1rem;
+    line-height: 2;
+    color: #6b6b6b; }
+
+.link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.live,
+.gHView {
+  margin-right: 15px;
+  letter-spacing: 1px;
+  background: #1E1244;
+  color: whitesmoke;
+  padding: 10px;
+  font-size: 1.2rem; }
+
 .contact {
   background: #1E1244;
   color: whitesmoke;
   text-align: center;
   position: relative; }
+  .contact button {
+    margin: 0 auto 13px; }
 
 input {
   background: transparent;
