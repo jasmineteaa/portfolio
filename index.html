@@ -5,27 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://kit.fontawesome.com/5bfeb91db4.js"></script>
+  <link type="image/png" href="./assets/bean.svg" rel="icon">
   <link rel="stylesheet"
     href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link rel="stylesheet" href="./styles/style.css">
-  <title>Portfolio</title>
+  <title>Jasmine's Portfolio</title>
 </head>
 <body>
-  <header>
+  <header id="header">
     <div class="wrapper">
-      <div class="topBar" id="topBar">
-        <div class="logo">jasminetea</div>
+        <div class="logo">jASMINETEA</div>
+        <div class="menuIcon" id="menuIcon">
+          <div class="line"></div>
+        </div>
         <nav>
           <ul>
-            <li><a href="#aboutMe">about</a></li>
-            <li><a href="#skill">skill</a></li>
+            <li><a href="#skill">tech toolbox</a></li>
             <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#aboutMe">about</a></li>
             <li><a href="#contact">contact</a></li>
           </ul>
         </nav>
-      </div>
+      <!-- </div> -->
       <div class="intro">
         <h1>Hi, I'm Jasmine</h1>
         <h2>I'm <span id="typed"</span></h2>
@@ -41,45 +44,45 @@
   
   <section class="skill" id="skill">
     <div class="wrapper">
-      <h3>Skills</h3>
+      <h3>Tech Toolbox</h3>
       <div class="skillContainer">
         <div class="skillItem skillItem1">
-          <i class="devicon-html5-plain"></i>
-          <!-- <p>HTML5</p> -->
+          <i aria-hidden="true" class="devicon-html5-plain"></i>
+          <p>HTML5</p>
         </div>
         <div class="skillItem skillItem2">
-          <i class="devicon-css3-plain"></i>
-          <!-- <p>CSS3</p> -->
+          <i aria-hidden="true" class="devicon-css3-plain"></i>
+          <p>CSS3</p>
         </div>
         <div class="skillItem skillItem3">
-          <i class="devicon-sass-original"></i>
-          <!-- <p>Sass</p> -->
+          <i aria-hidden="true" class="devicon-sass-original"></i>
+          <p>Sass</p>
         </div>
         <div class="skillItem skillItem4">
-          <i class="devicon-javascript-plain"></i>
-          <!-- <p>JavaScript</p> -->
+          <i aria-hidden="true" class="devicon-javascript-plain"></i>
+          <p>JavaScript</p>
         </div>
         <div class="skillItem skillItem5">
-          <i class="devicon-jquery-plain"></i>
-          <!-- <p>jQuery</p> -->
+          <i aria-hidden="true" class="devicon-jquery-plain"></i>
+          <p>jQuery</p>
         </div>
         <div class="skillItem skillItem6">
-          <i class="devicon-git-plain"></i>
-          <!-- <p>Git</p> -->
+          <i aria-hidden="true" class="devicon-git-plain"></i>
+          <p>Git</p>
         </div>
         <div class="skillItem skillItem7">
-          <i class="devicon-github-plain"></i>
-          <!-- <p>GitHub</p> -->
+          <i aria-hidden="true" class="devicon-github-plain"></i>
+          <p>GitHub</p>
         </div>
         <div class="skillItem skillItem8">
-          <i class="devicon-react-original"></i>
-          <!-- <p>ReactJS</p> -->
+          <i aria-hidden="true" class="devicon-react-original"></i>
+          <p>ReactJS</p>
         </div>
         <div class="skillItem skillItem9">
-          <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <svg aria-hidden="true" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <title/><path d="M3.89 15.673L6.255.461A.542.542 0 0 1 7.27.289L9.813 5.06 3.89 15.673zm16.795 3.691L18.433 5.365a.543.543 0 0 0-.918-.295l-14.2 14.294 7.857 4.428a1.62 1.62 0 0 0 1.587 0l7.926-4.428zM14.3 7.148l-1.82-3.482a.542.542 0 0 0-.96 0L3.53 17.984 14.3 7.148z"/>
           </svg>
-          <!-- <p>Firebase</p> -->
+          <p>Firebase</p>
         </div>
       </div>
     </div>
@@ -120,7 +123,7 @@
 
           <div class="portfolioImg twoThird">
             <a target="_blank" href="https://jasmineteaa.github.io/jasmine-tossan-project-three/">
-              <img src="./assets/jsQuiz.PNG" alt="quiz made from jQuery">
+              <img src="./assets/jsQuiz.png" alt="quiz made from jQuery">
             </a>
             <div class="overlay"></div>
           </div>
@@ -167,7 +170,7 @@
 
           <div class="portfolioImg twoThird">
             <a target="_blank" href="https://project-five-95c84.firebaseapp.com/">
-              <img src="./assets/musicThing.PNG" alt="playlist generator project created using React, Firebase, REST Api">
+              <img src="./assets/musicThing.png" alt="playlist generator project created using React, Firebase, REST Api">
             </a>
             <div class="overlay"></div>
           </div>
@@ -196,32 +199,34 @@
         </div>
       </div> -->
 
-      <!-- <div class="portfolioItem">
+      <div class="portfolioItem">
         <div class="innerWrapper">
       
+          <div class="portfolioImg twoThird">
+            <a target="_blank" href="https://andrewdavidfrankiejasmine.github.io/collegeNavigator/">
+              <img src="./assets/collegeNavigator.png" alt="college navigator app created using REST api and React and Firebase">
+            </a>
+          </div>
+
           <div class="description third">
             <h5 class="title">Agency API Project</h5>
             <p>This college navigator app allows users to search and filter through different schools and save or edit notes on their favorite institutions.</p> 
             <ul class="skills">
-              <li>React</li>
-              <li>REST API</li>
-              <li>Firebase</li>
-              <li>HTML</li>
-              <li>SCSS</li>
+              <li>React |</li>
+              <li>REST API |</li>
+              <li>Firebase |</li>
+              <li>HTML |</li>
+              <li>SCSS |</li>
               <li>Responsive Design</li>
             </ul>
-            <a class="live" href="https://github.com/jasmineteaa/jasmineTossanProjectTwo" target="_blank">View Live</a>
-            <a class="gHView" href="https://jasmineteaa.github.io/jasmineTossanProjectTwo/" target="_blank">View GitHub</a>
+            <div class="link">
+              <a class="live" href="https://andrewdavidfrankiejasmine.github.io/collegeNavigator/#/" target="_blank">View Live</a>
+              <a class="gHView" href="hhttps://github.com/andrewdavidfrankiejasmine/collegeNavigator" target="_blank">View GitHub</a>
+            </div>
           </div>
 
-          <div class="portfolioImg twoThird">
-            <a target="_blank" href="https://andrewdavidfrankiejasmine.github.io/collegeNavigator/">
-              <img src="./assets/collegeNavigator2.PNG" alt="college navigator app created using REST api and React and Firebase">
-            </a>
-          </div>
-        
         </div>
-      </div> -->
+      </div>
     </div>
   </section> <!-- end of portfolio-->
 
@@ -231,20 +236,15 @@
         <div class="personalImg">
           <img src="./assets/personal.PNG" alt="Jasmine hiking in Dundas Peak.">
         </div>
-        <div class="info">
           <h3>Hi I'm Jasmine</h3>
-          <p class="shortIntro">I'm a front-end developer, dark chocolate addict and avid reader based in Toronto.</p>
+          <p class="shortIntro">I'm a front end developer with a Science and Business background.</p>
           <div class="text">
-            <div class="coding">
-              <h5>Coding</h5>
-              <p>I'm focused on building inclusive, accessible and responsive web designs. I'm always looking to improve my skills, learn new things and give back to the tech community.</p>
-            </div>
-            <div class="personal">
-              <h5>Personal</h5>
-              <p>In my spare time, I like to backpack to different countries, visit aquariums and read memoirs and autobiographies.</p>
-            </div>
+            <p>My experience taught me to be meticulous, analytical and to consider the product life-cycle of all projects. I started coding because it is both creative and logical, and always offers new problems to solve.</p>
+              
+            <p> I am working on strengthening my skills in React, adding Redux to my tool kit and learning more about accessibility to contribute to a more inclusive web. </p>
+
+            <p>In my spare time, I like to backpack to different countries, visit aquariums and read memoirs and autobiographies.</p>
           </div>
-        </div>
       </div>
     </div>
   </section>
@@ -271,30 +271,24 @@
     </div>
     <footer>
       <div class="wrapper">
-        <button><a href="#topBar"><i class="fas fa-arrow-circle-up"></i></a></button>
+        <button><a href="#header"><i class="fas fa-arrow-circle-up"></i></a></button>
         <ul class="socials">
           <li>
-            <a href="https://www.linkedin.com/in/jasminetossan/" aria-label="Go to Jasmine's LinkedIn page.">
+            <a href="https://www.linkedin.com/in/jasminetossan/" target="_blank" aria-label="Go to Jasmine's LinkedIn page.">
               <i class="fab fa-linkedin" aria-hidden="true"></i>
               <span class="visuallyHidden">LinkedIn</span>
             </a>
           </li>
           <li>
-            <a href="https://github.com/jasmineteaa" aria-label="Go to Jasmine's Github page.">
+            <a href="https://github.com/jasmineteaa" target="_blank" aria-label="Go to Jasmine's Github page.">
               <i class="fab fa-github" aria-hidden="true"></i>
-              <span class="visuallyHidden">Snapchat</span>
+              <span class="visuallyHidden">Github</span>
             </a>
           </li>
           <li>
-            <a href="https://twitter.com/Jasmineteaa7" aria-label="Go to Jasmine's Twitter page.">
+            <a href="https://twitter.com/Jasmineteaa7" target="_blank" aria-label="Go to Jasmine's Twitter page.">
               <i class="fab fa-twitter" aria-hidden="true"></i>
               <span class="visuallyHidden">Twitter</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://medium.com/" aria-label="Go to Jasmine's Medium page.">
-              <i class="fab fa-medium" aria-hidden="true"></i>
-              <span class="visuallyHidden">Medium</span>
             </a>
           </li>
         </ul>

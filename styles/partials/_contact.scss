@@ -28,6 +28,11 @@ input {
     border-radius: 25px;
     background: linear-gradient(to right, $accent3 40%, $accent1);
     margin: 30px auto 0;
+    opacity: 1;
+    transition: opacity 0.3s;
+    &:hover {
+      opacity: 0.7;
+    }
   }
 }
 form {
@@ -58,6 +63,11 @@ textarea{
   justify-content: center;
   li{
     padding: 10px;
+    opacity: 1;
+    transition: opacity 0.3s;
+    &:hover {
+      opacity: 0.7;
+    }
   }
   i{
     font-size: 25px;

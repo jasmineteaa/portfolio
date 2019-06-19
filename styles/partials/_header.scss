@@ -1,28 +1,99 @@
+nav{
+  height: 100vh;
+  width: 25rem;
+  background-color: #fff;
+  display: none;
+  right: 0;
+  z-index: 9;
+  position: fixed;
+  text-transform: capitalize;
+  ul {
+    padding: 0;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    li {
+      font-size: 2rem;
+      padding: 1rem 0;
+      &:hover a{
+        transition: all 0.5s ease;
+        color: $accent1;
+      }
+    }
+  }
+}
+.menuIcon.active {
+  transform: translateX(-9rem);
+}
+.menuIcon {
+  cursor: pointer;
+  z-index: 10;
+  width: 3.5rem;
+  height: 3.5rem;
+  top: 2rem;
+  right: 5rem;
+  position: fixed;
+  background: #ffffff78;
+}
+.active .line{
+  background: 0 0;
+  &::before{
+    transform: rotate(-405deg) translateX(-10px) translateY(5px);
+    background: #FD6A94;
+  }
+  &::after {
+    transform: rotate(-315deg) translateX(-8px) translateY(-4px);
+    background: #FD6A94;
+  }
+}
+.line,
+.line::before,
+.line::after {
+    width: 32px;
+    height: 4px;
+    background:#000000c4;
+    transition: all 0.5s ease; 
+}
+.line,
+.line::before,
+.line::after,
+.menuIcon {
+    transition: all 0.5s ease; 
+}
+.line {
+    top: 30px;
+    margin: 0 auto;
+    position: relative;
+    &::before{
+      position: absolute;
+      top: -10px;
+      content: ''
+    }
+    &::after {
+      position: absolute;
+      top: 10px;
+      content: ''
+    }
+}
 header{
-  background-image: linear-gradient(to bottom, $primary 65%, #C4F9FF00),url(../../assets/background.jpg);
+  background-image: linear-gradient(to bottom, $primary 65%, #C4F9FF38),url(../../assets/background.jpg);
   background-color: $primary;
   height: 100vh;
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
 }
-// Photo by Joanna Kosinska on Unsplash
-.topBar {
-  display: flex;
-  padding: 40px;
-  font-weight: 500;
-}
+
 .logo {
-  flex: 2;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  top: 3rem;
+  left: 5rem;
+  position: absolute;
+  font-size: 1.6rem;
+  color: #000000c4;;
 }
-nav ul {
-  display: flex;
-  flex: 4;
-  li {
-    margin-left: 25px;
-    text-transform: capitalize;
-  }
-}
+
 
 .intro {
   width: 90%;

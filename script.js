@@ -1,4 +1,13 @@
 $(document).ready(function() {
+  $("#menuIcon").on('click', function () {
+    console.log('clicked!');
+    $(this).toggleClass("active")
+    $("nav").animate({
+      width: "toggle"
+    });
+    
+  });
+
   // smoothscroll
   $('a[href*="#"]').on('click', function(e) {
     e.preventDefault()
