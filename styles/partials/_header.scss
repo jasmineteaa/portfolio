@@ -123,6 +123,13 @@ header{
   }
   button {
     margin: 30px auto 0;
+    a{
+      transition: opacity 0.3s;
+    }
+    &:hover,
+    &:focus {
+      opacity: 0.3;
+    }
   }
 }
 button{
